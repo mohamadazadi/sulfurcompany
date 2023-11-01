@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sulfur Company</title>
+    <link rel="icon" href="assets/images/logo-black (Copy).png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="logonav">
+            <img src="assets/images/logo-no-background (Copy).png">
+        </div>
+
+        <div class="mobilenav">
+            <button type="button" class="mobilebtn" id="mobileshow" onclick="burgerMenu()">
+                click
+            </button>
+
+            <div class="navbarmenu" id="burgurmenu">
+
+                <div class="navbaritems">
+
+                    <div class="items">
+                        <span>Comments</span>
+                    </div>
+                    <div class="items">
+                        <span>about us</span>
+
+                    </div>
+                    <div class="items" id="dropdownshow" onclick="dropDowns()">dropdown<i class="fa fa-arrow-down"></i>
+                        <div class="showitems" id="itemsshow">
+                            <span class="dropdown-item">example1</span>
+                            <span class="dropdown-item">example2</span>
+                            <span class="dropdown-item">example3</span>
+                            <span class="dropdown-item">example4</span>
+                        </div>
+                    </div>
+                    <div class="items" id="dropdownshow1" onclick="dropDownstwo()">dropdown1<i
+                            class="fa fa-arrow-down"></i>
+                        <div class="showitems" id="itemsshow1">
+                            <span class="dropdown-item">example1</span>
+                            <span class="dropdown-item">example2</span>
+                            <span class="dropdown-item">example3</span>
+                            <span class="dropdown-item">example4</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="searchform">
+                        <input type="search">
+                        <button type="button" class="btn btn-primary"></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <span>home</span>
+        </div>
+    </nav>
+
+    <div class="forallwork">
+
+
+
+
+
+        <h3>carousels</h3>
+        <div class="carousel-container">
+            <h2>fade in/out</h2>
+            <ul class="carousel my-carousel">
+                <input class="carousel__activator" type="radio" id="A" name="activator" checked="checked" />
+                <input class="carousel__activator" type="radio" id="B" name="activator" />
+                <input class="carousel__activator" type="radio" id="C" name="activator" />
+                <input class="carousel__activator" type="radio" id="D" name="activator" />
+                <input class="carousel__activator" type="radio" id="E" name="activator" />
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="E"></label>
+                    <label class="carousel__control carousel__control--forward" for="B"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="A"></label>
+                    <label class="carousel__control carousel__control--forward" for="C"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="B"></label>
+                    <label class="carousel__control carousel__control--forward" for="D"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="C"></label>
+                    <label class="carousel__control carousel__control--forward" for="E"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="D"></label>
+                    <label class="carousel__control carousel__control--forward" for="A"></label>
+                </div>
+                <li class="carousel__slide">
+                    <h1>A</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>B</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>C</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>D</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>E</h1>
+                </li>
+                <div class="carousel__indicators">
+                    <label class="carousel__indicator" for="A"></label>
+                    <label class="carousel__indicator" for="B"></label>
+                    <label class="carousel__indicator" for="C"></label>
+                    <label class="carousel__indicator" for="D"></label>
+                    <label class="carousel__indicator" for="E"></label>
+                </div>
+            </ul>
+        </div>
+        <div class="carousel-container">
+            <h2>slider</h2>
+            <div class="carousel my-carousel carousel--translate">
+                <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
+                <input class="carousel__activator" type="radio" name="carousel" id="G" />
+                <input class="carousel__activator" type="radio" name="carousel" id="H" />
+                <input class="carousel__activator" type="radio" name="carousel" id="I" />
+                <input class="carousel__activator" type="radio" name="carousel" id="J" />
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="J"></label>
+                    <label class="carousel__control carousel__control--forward" for="G"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="F"></label>
+                    <label class="carousel__control carousel__control--forward" for="H"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="G"></label>
+                    <label class="carousel__control carousel__control--forward" for="I"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="H"></label>
+                    <label class="carousel__control carousel__control--forward" for="J"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="I"></label>
+                    <label class="carousel__control carousel__control--forward" for="F"></label>
+                </div>
+                <div class="carousel__track">
+                    <li class="carousel__slide">
+                        <h1>F</h1>
+                    </li>
+                    <li class="carousel__slide">
+                        <h1>G</h1>
+                    </li>
+                    <li class="carousel__slide">
+                        <h1>H</h1>
+                    </li>
+                    <li class="carousel__slide">
+                        <h1>I</h1>
+                    </li>
+                    <li class="carousel__slide">
+                        <h1>J</h1>
+                    </li>
+                </div>
+                <div class="carousel__indicators">
+                    <label class="carousel__indicator" for="F"></label>
+                    <label class="carousel__indicator" for="G"></label>
+                    <label class="carousel__indicator" for="H"></label>
+                    <label class="carousel__indicator" for="I"></label>
+                    <label class="carousel__indicator" for="J"></label>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <h2>thumbnail indicators</h2>
+            <ul class="carousel my-carousel carousel--thumb">
+                <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked" />
+                <input class="carousel__activator" type="radio" id="L" name="thumb" />
+                <input class="carousel__activator" type="radio" id="M" name="thumb" />
+                <input class="carousel__activator" type="radio" id="N" name="thumb" />
+                <input class="carousel__activator" type="radio" id="O" name="thumb" />
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="O"></label>
+                    <label class="carousel__control carousel__control--forward" for="L"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="K"></label>
+                    <label class="carousel__control carousel__control--forward" for="M"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="L"></label>
+                    <label class="carousel__control carousel__control--forward" for="N"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="M"></label>
+                    <label class="carousel__control carousel__control--forward" for="O"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="N"></label>
+                    <label class="carousel__control carousel__control--forward" for="K"></label>
+                </div>
+                <li class="carousel__slide">
+                    <h1>K</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>L</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>M</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>N</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>O</h1>
+                </li>
+                <div class="carousel__indicators">
+                    <label class="carousel__indicator" for="K"></label>
+                    <label class="carousel__indicator" for="L"></label>
+                    <label class="carousel__indicator" for="M"></label>
+                    <label class="carousel__indicator" for="N"></label>
+                    <label class="carousel__indicator" for="O"></label>
+                </div>
+            </ul>
+        </div>
+        <div class="carousel-container">
+            <h2>scale</h2>
+            <ul class="carousel my-carousel carousel--scale">
+                <input class="carousel__activator" type="radio" id="P" name="scale" checked="checked" />
+                <input class="carousel__activator" type="radio" id="Q" name="scale" />
+                <input class="carousel__activator" type="radio" id="R" name="scale" />
+                <input class="carousel__activator" type="radio" id="S" name="scale" />
+                <input class="carousel__activator" type="radio" id="T" name="scale" />
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="T"></label>
+                    <label class="carousel__control carousel__control--forward" for="Q"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="P"></label>
+                    <label class="carousel__control carousel__control--forward" for="R"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="Q"></label>
+                    <label class="carousel__control carousel__control--forward" for="S"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="R"></label>
+                    <label class="carousel__control carousel__control--forward" for="T"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="S"></label>
+                    <label class="carousel__control carousel__control--forward" for="P"></label>
+                </div>
+                <li class="carousel__slide">
+                    <h1>P</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>Q</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>R</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>S</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>T</h1>
+                </li>
+                <div class="carousel__indicators">
+                    <label class="carousel__indicator" for="P"></label>
+                    <label class="carousel__indicator" for="Q"></label>
+                    <label class="carousel__indicator" for="R"></label>
+                    <label class="carousel__indicator" for="S"></label>
+                    <label class="carousel__indicator" for="T"></label>
+                </div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="headimage">
+            <!-- <video autoplay loop>
+                <source src="assets/images/istockphoto-1453894229-640_adpp_is.mp4" type="video/mp4">
+            </video> -->
+            <img src="assets/images/canvas.png">
+        </div>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="introsulf">
+                    <h3>
+                        تأثیر سولفور بر سلامت در پزشکی سنتی ایران
+                    </h3>
+                    <p>
+                        خواص ضد عفونی کننده سولفور در درمان بیماری‌های پوستی: در ایران، سولفور برای درمان بیماری‌های
+                        پوستی مانند آکنه، قارچ‌های پوستی و زگیل استفاده می‌شود. بررسی علمی اثرات ضدعفونی کننده
+                        سولفور بر روی این بیماری‌ها و ارزیابی کیفیت و اثربخشی آن در طب سنتی ایران می‌تواند موضوع
+                        جالبی برای تحقیق باشد.
+                    </p>
+                    <p>
+                        استفاده از سولفور در درمان بیماری‌های تنفسی: در برخی بیماری‌های تنفسی مانند آسم و برونشیت،
+                        استفاده از سولفور به عنوان ماده ایمنی‌زای طب سنتی می‌تواند مؤثر باشد. بررسی کیفیت و اثربخشی
+                        سولفور در این بیماری‌ها و مقایسه آن با روش‌های دارویی مدرن می‌تواند در تحقیقات این زمینه
+                        منجر به نتایج جالب و جدیدی شود.
+                        تأثیر سولفور بر سیستم ایمنی بدن: مصرف سولفور در طب سنتی ایران به عنوان تقویت کننده سیستم
+                        ایمنی بدن معروف است. بررسی تأثیر سولفور بر عملکرد سیستم ایمنی بدن و تعیین نحوه‌ی عملکرد آن
+                        به شکل دقیق می‌تواند زمینه‌ی پژوهش علمی‌ای مناسب در این زمینه باشد.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h2>
+                        سولفور یا عنصر گوگرد چیست؟
+                    </h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 aboutsulf">
+                            <img src="assets/images/sulphur-forms.jpg">
+                        </div>
+                        <div class="col-xs-12 col-md-6 aboutsulf">
+                            <img src="assets/images/sulphur-forms.jpg">
+                        </div>
+                    </div>
+                    <p>
+                        عنصر گوگرد یا سولفور با نماد شیمیایی S و عدد اتمی ۱۶ در گروه شانزدهم جدول تناوبی قرار گرفته است.
+                        این ماده بیشتر به شکل بلورهای زرد رنگ موجود در کانی‌های سولفید و سولفات شناخته شده ‌است و یک
+                        نافلز بدبو، بدمزه و چند ظرفیتی می‌باشد. گوگرد یک عنصر مهم برای همه موجودات زنده بحساب می‌آید،
+                        همچنین به صورت گسترده‌تر در ساخت باروت، ملین‌ها، کبریت‌ها و حشره‌کش‌ها کاربرد دارد.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/java.js"></script>
+</body>
+
+</html>
