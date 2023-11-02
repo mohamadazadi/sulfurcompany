@@ -147,9 +147,14 @@ body{
 /**
   * Control & indicator mixin
 */
+.allcarousel{
+
+  background-color: #292828;
+ 
+}
 .carousel {
   height: 300px;
-  width: 400px;
+  width: 300px;
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -170,6 +175,18 @@ body{
 /**
     * Create rules for when slides are contained within a track
   */
+}
+@media (max-width:330px){
+  .carousel {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (min-width:1000px) and (max-width:3000px){
+  .carousel {
+    height: 300px;
+    width: 400px;
+  }
 }
 .carousel__controls,
 .carousel__activator {
@@ -360,6 +377,7 @@ body{
 
 .carousel-container {
   display: inline-block;
+
 }
 .my-carousel {
   border-radius: 5px;
