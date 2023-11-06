@@ -182,12 +182,18 @@ body{
     width: 200px;
   }
 }
-@media (min-width:1000px) and (max-width:3000px){
+/* @media (min-width:1000px) and (max-width:1500px){
+  .carousel {
+    height: 400px;
+    width: 600px;
+  }
+} */
+/* @media (min-width:1761px) and (max-width:3000px){
   .carousel {
     height: 300px;
     width: 400px;
   }
-}
+} */
 .carousel__controls,
 .carousel__activator {
   display: none;
@@ -446,4 +452,33 @@ h3 {
 
 .aboutsulf img{
     width: 100%;
+}
+
+.hover-div{
+  background-color:aqua ;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.content{
+  width: 100%;
+}
+.changeimage{
+  display: none;
+
+}
+
+.changeimage img{
+  width: 100%;
+}
+.showimg{
+  display: block;
+  padding: 20px;
+}
+.hideimg{
+  display: none;
+}
+.text-content{
+  border-left: 2px solid ;
+  padding: 20px;
+  
 }
