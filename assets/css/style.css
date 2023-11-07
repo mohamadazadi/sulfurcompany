@@ -11,19 +11,128 @@ body{
     background-color: gold;
     text-align: center;
 }
+
+ newnav
+
+.allnav{
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+  position: relative;
+}
+.myhome{
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.dowpdown-container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.homie {
+  width: 100%;
+  display: flex;
+  gap: 49px;
+}
+.dropdown-content {
+  width: 100%;
+  position: absolute;
+  justify-content: space-evenly;
+  background-color: aquamarine;
+  color: black;
+  display: none;
+  z-index: 100;
+}
+.show{
+  display: flex;
+  animation: marginnav .5s ease;
+}
+@keyframes marginnav{
+  0%{
+margin-top: -10%;
+z-index: -1;
+  }
+  100%{
+    margin-top: 0;
+  z-index: -1;
+  }
+}
+@media (min-width:804px){
+  .btnMobile{
+  display: none;
+  }
+}
+@media (max-width:804px){
+
+  .dowpdown-container{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: end;
+
+  }
+  .myhome{
+    flex-wrap: wrap;
+  }
+  .dropdown{
+  width: 100%;
+  }
+}
+.btnMobile{
+  padding-top: 7px;
+  float: right;
+  height: 5vh;
+  
+}
+.btnMobile span {
+  border: 1px solid;
+  position: relative;
+  width: 89%;
+  display: block;
+  right: 0px;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+.btnMobile span::before {
+  content: '';
+  border: 1px solid;
+  padding-right: 34px;
+  display: block;
+  position: absolute;
+  margin-top:var(--marginbefore,-9px);
+  transform: var(--before);
+  transition: 1s all;
+}
+.btnMobile span::after {
+  content:"";
+  border: 1px solid;
+  padding-right: 34px;
+  display: block;
+  position: absolute;
+  margin-top:var(--marginafter,8px) ;
+  transform: var(--after);
+  transition: 1s all;
+}
+
+ newnav
+
+
+
 .logonav img{
     width: 100%;
 }
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
     color: white;
     background-color: rgb(41, 40, 40);
     flex-wrap: nowrap;
     padding: 20px;
-}
+} */
 
-.navbarmenu{
+/* .navbarmenu{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -109,7 +218,7 @@ body{
     .navbarmenu{
         display: flex !important;
     }
-}
+} */
 .headimage img{
     width: 100%;
     filter: brightness(70%);
